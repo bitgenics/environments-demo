@@ -1,9 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import config from "./config";
+
+const APP_BG_COLOR = config.BG_COLOR || "#282c34";
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ backgroundColor: APP_BG_COLOR }} className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
